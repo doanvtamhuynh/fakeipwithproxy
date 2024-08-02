@@ -3,3 +3,8 @@ D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.Form1.res
 D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.Properties.Resources.resources
 D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.csproj.GenerateResource.cache
 D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.csproj.CoreCompileInputs.cache
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\bin\Debug\FakeIpWithProxy.exe.config
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\bin\Debug\FakeIpWithProxy.exe
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\bin\Debug\FakeIpWithProxy.pdb
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.exe
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.pdb
