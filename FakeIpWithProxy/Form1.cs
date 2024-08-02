@@ -19,7 +19,8 @@ namespace FakeIpWithProxy
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-
+            var stop = new Stop();
+            stop.StopFakeIp();
         }
 
     }

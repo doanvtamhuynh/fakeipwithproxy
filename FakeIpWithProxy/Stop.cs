@@ -16,7 +16,13 @@ namespace FakeIpWithProxy
     {
         public void StopFakeIp()
         {
+            var adbCommand = new ADBCommand();
 
+            adbCommand.ExecuteADBCommand("adb shell iptables -t nat -F");
+            adbCommand.ExecuteADBCommand("adb shell iptables -t mangle -F");
+            adbCommand.ExecuteADBCommand("adb shell iptables -F");
+            adbCommand.ExecuteADBCommand("adb shell iptables -t nat -X REDSOCKS");
+            adbCommand.ExecuteADBCommand("adb shell killall redsocks");
         }
     }
 }
