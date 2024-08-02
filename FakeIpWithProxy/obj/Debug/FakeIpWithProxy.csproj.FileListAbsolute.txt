@@ -1,0 +1,5 @@
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.csproj.AssemblyReference.cache
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.Form1.resources
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.Properties.Resources.resources
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.csproj.GenerateResource.cache
+D:\MyProject\FakeIpWithProxy\FakeIpWithProxy\obj\Debug\FakeIpWithProxy.csproj.CoreCompileInputs.cache
