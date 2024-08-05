@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\MyProject\\FakeIpWithProxy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|D:\\MyProject\\FakeIpWithProxy\\fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|d:\\myproject\\fakeipwithproxy\\fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|solutionrelative:fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|D:\\MyProject\\FakeIpWithProxy\\fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|d:\\myproject\\fakeipwithproxy\\fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|solutionrelative:fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|d:\\myproject\\fakeipwithproxy\\fakeipwithproxy\\pushtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|solutionrelative:fakeipwithproxy\\pushtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|D:\\MyProject\\FakeIpWithProxy\\fakeipwithproxy\\stop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|solutionrelative:fakeipwithproxy\\stop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PushTools.cs",
-              "DocumentMoniker": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\PushTools.cs",
-              "RelativeDocumentMoniker": "FakeIpWithProxy\\PushTools.cs",
-              "ToolTip": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\PushTools.cs",
-              "RelativeToolTip": "FakeIpWithProxy\\PushTools.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAqwB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T08:40:29.56Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -49,9 +28,9 @@
               "RelativeDocumentMoniker": "FakeIpWithProxy\\Form1.cs",
               "ToolTip": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\Form1.cs",
               "RelativeToolTip": "FakeIpWithProxy\\Form1.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBsAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwBEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T07:46:00.467Z",
+              "WhenOpened": "2024-08-05T12:08:14.468Z",
               "EditorCaption": ""
             },
             {
@@ -65,19 +44,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T07:45:59.159Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Stop.cs",
-              "DocumentMoniker": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\Stop.cs",
-              "RelativeDocumentMoniker": "FakeIpWithProxy\\Stop.cs",
-              "ToolTip": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\Stop.cs",
-              "RelativeToolTip": "FakeIpWithProxy\\Stop.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T07:27:47.817Z",
-              "EditorCaption": ""
             }
           ]
         }
