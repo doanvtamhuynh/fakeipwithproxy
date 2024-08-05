@@ -1,3 +1,4 @@
+# THIS IS A FAKE IP TOOL FOR ANDROID PHONES USING PROXY
 # Step 1: Download and Install Android SDK Platform Tools
 ### Download SDK Platform Tools:
 [Android SDK Platform Tools download page.](https://developer.android.com/tools/releases/platform-tools)
