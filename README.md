@@ -1,10 +1,10 @@
-## Step 1: Download and Install Android SDK Platform Tools
+# Step 1: Download and Install Android SDK Platform Tools
 - Download SDK Platform Tools:
-<url src="https://developer.android.com/tools/releases/platform-tools">
+[Android SDK Platform Tools download page.](https://developer.android.com/tools/releases/platform-tools)
 
-## Step 2: Add ADB to the PATH
+# Step 2: Add ADB to the PATH
 
-# On Windows:
+## On Windows:
 
 - Open Control Panel:
 Press Win + R, type control panel, and press Enter.
@@ -27,7 +27,7 @@ In the Edit Environment Variable window, select New and add the path to the fold
 - Save and Exit:
 Click OK to save the changes and close all windows.
 
-# On macOS and Linux:
+## On macOS and Linux:
 
 - Open Terminal.
 
