@@ -17,6 +17,7 @@ namespace FakeIpWithProxy
             var adbComm = new ADBCommand();
 
             adbComm.ExecuteADBCommand("adb shell rm /data/local/tmp/redsocks");
+            adbComm.ExecuteADBCommand("adb shell rm /data/local/tmp/redsocks.conf");
             adbComm.ExecuteADBCommand("adb shell rm /data/local/tmp/iptables");
             string addressIptables = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName.Replace("\\", "/")
                                                         + "/tools/iptables";
