@@ -48,3 +48,16 @@ export PATH=$PATH:/path/to/adb/platform-tools
 ```
 source ~/.bashrc  # or ~/.zshrc depending on your shell
 ```
+# Step 3: Root devices
+- Root the device using tools designed to root the device, for example using Magisk
+```
+https://github.com/topjohnwu/Magisk/
+```
+# Step 4: Fake Ip
+- Install
+```
+git clone https://github.com/doanvtamhuynh/fakeipwithproxy.git
+```
+- Connect to device using USB
+- Enter your Proxy in **Your Proxy** and click **Fake IP**
+- Press **Stop Fake** to close
