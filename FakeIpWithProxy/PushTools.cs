@@ -23,12 +23,17 @@ namespace FakeIpWithProxy
                                                         + "/tools/iptables";
             string addressRedsocks = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName.Replace("\\", "/")
                                                         + "/tools/redsocks";
+            string addressRedsocksConfig = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName.Replace("\\", "/")
+                                                        + "/tools/redsocks.conf";
             adbComm.ExecuteADBCommand("adb push " + addressIptables + " /data/local/tmp");
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             adbComm.ExecuteADBCommand("adb push " + addressRedsocks + " /data/local/tmp");
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
+            adbComm.ExecuteADBCommand("adb push " + addressRedsocksConfig + " /data/local/tmp");
+            Thread.Sleep(3000);
             adbComm.ExecuteADBCommand("adb shell chmod 777 /data/local/tmp/redsocks");
             adbComm.ExecuteADBCommand("adb shell chmod 777 /data/local/tmp/iptables");
+            adbComm.ExecuteADBCommand("adb shell chmod 777 /data/local/tmp/redsocks.conf");
         }
     }
 }

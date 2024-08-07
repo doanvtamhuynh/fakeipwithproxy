@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,8 +21,11 @@ namespace FakeIpWithProxy
 
         private void btnStop_Click(object sender, EventArgs e)
         {
+            labStop.Visible = true;
             var stop = new Stop();
             stop.StopFakeIp();
+            Thread.Sleep(1000);
+            labStop.Visible = false;
         }
 
         private void txtProxy_TextChanged(object sender, EventArgs e)
@@ -52,6 +56,40 @@ namespace FakeIpWithProxy
                 txtUsername.Text = splitProxy[2];
                 txtPassword.Text = splitProxy[3];
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            labFake.Visible = true;
+
+            string ip = txtIpProxy.Text;
+            string port = txtPortProxy.Text;
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            string type = cbbTypeProxy.Text;
+
+            if(ip == "" || port == "")
+            {
+                MessageBox.Show("Proxy Empty!", "Warning!");
+            }
+            else
+            {
+                Stop stop = new Stop();
+                stop.StopFakeIp();
+
+                Config config = new Config();
+                config.ConfigRedsocks(ip, port, username, password, type);
+
+                PushTools pushTools = new PushTools();
+                pushTools.Push();
+
+                config.ConfigIptables(ip);
+
+                ADBCommand adbCommand = new ADBCommand();
+                adbCommand.ExecuteADBCommand("adb shell ./data/local/tmp/redsocks -c redsocks.conf");
+            }
+
+            labFake.Visible = false;
         }
     }
 }

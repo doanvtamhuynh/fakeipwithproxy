@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace FakeIpWithProxy
 {
 
-    internal class FakeIp
+    internal class Config
     {
         private static string _defaultRedsocksFileName = "redsocks.conf";
         private static string _defaultRedsocksLocalPort = "12345";
@@ -33,12 +33,8 @@ namespace FakeIpWithProxy
                 , username
                 , password);
             }
-            //using (StreamWriter sw = System.IO.File.CreateText("redrocks.conf"))
-            //{
-            //    sw.WriteLine(config);
-            //}
             var pathConfig = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName.Replace("\\", "/")
-                                                        + "/tools/redsocks.conf";
+                                                        + "/tools/" + _defaultRedsocksFileName;
             File.WriteAllText(pathConfig, config);
         }
 
