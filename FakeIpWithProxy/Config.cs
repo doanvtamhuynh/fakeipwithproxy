@@ -42,7 +42,6 @@ namespace FakeIpWithProxy
         {
             ADBCommand adbComm = new ADBCommand();
 
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -N REDSOCKS");
             adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -i ap+ -p tcp --dport 12345 -j ACCEPT");
             adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -i lo -p tcp --dport 12345 -j ACCEPT");
             adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -p tcp --dport 12345 -j DROP");
@@ -50,15 +49,7 @@ namespace FakeIpWithProxy
             adbComm.ExecuteADBCommand("adb shell iptables -t nat -A PREROUTING -i ap+ -p tcp -j REDIRECT --to 12345");
             adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p tcp -d " + ip + " -j RETURN");
             adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p tcp -j REDIRECT --to 12345");
-            adbComm.ExecuteADBCommand("adb shell iptables -t mangle -N REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t mangle -A REDSOCKS -p udp -j TPROXY --on-port 10053 --tproxy-mark 0x01/0x01");
-            adbComm.ExecuteADBCommand("adb shell iptables -t mangle -A PREROUTING -j REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p udp --dport 53 -j REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p tcp --dport 80 -j REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p tcp --dport 443 -j REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p udp --dport 3478 -j REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDSOCKS");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDSOCKS");
+            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p udp --dport 19302 -j REDIRECT --to-ports 10053");
         }
     }
 }
