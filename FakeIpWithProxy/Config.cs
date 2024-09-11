@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -42,6 +43,10 @@ namespace FakeIpWithProxy
         {
             ADBCommand adbComm = new ADBCommand();
 
+            adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -j DROP");
+            adbComm.ExecuteADBCommand("adb shell iptables -A FORWARD -j DROP");
+            adbComm.ExecuteADBCommand("adb shell iptables -A OUTPUT -j DROP");
+            Thread.Sleep(2000);
             adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -i ap+ -p tcp --dport 12345 -j ACCEPT");
             adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -i lo -p tcp --dport 12345 -j ACCEPT");
             adbComm.ExecuteADBCommand("adb shell iptables -A INPUT -p tcp --dport 12345 -j DROP");
@@ -49,7 +54,11 @@ namespace FakeIpWithProxy
             adbComm.ExecuteADBCommand("adb shell iptables -t nat -A PREROUTING -i ap+ -p tcp -j REDIRECT --to 12345");
             adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p tcp -d " + ip + " -j RETURN");
             adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p tcp -j REDIRECT --to 12345");
-            adbComm.ExecuteADBCommand("adb shell iptables -t nat -A OUTPUT -p udp --dport 19302 -j REDIRECT --to-ports 10053");
+            adbComm.ExecuteADBCommand("adb shell iptables -t mangle -A PREROUTING -i wlan0 -p udp --dport 10000:65535 -j TPROXY --on-port 10053 --tproxy-mark 0x01/0x01");
+            Thread.Sleep(2000);
+            adbComm.ExecuteADBCommand("adb shell iptables -D INPUT -j DROP");
+            adbComm.ExecuteADBCommand("adb shell iptables -D FORWARD -j DROP");
+            adbComm.ExecuteADBCommand("adb shell iptables -D OUTPUT -j DROP");
         }
     }
 }

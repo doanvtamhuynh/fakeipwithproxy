@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\MyProject\\FakeIpWithProxy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|D:\\MyProject\\FakeIpWithProxy\\fakeipwithproxy\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|d:\\myproject\\fakeipwithproxy\\fakeipwithproxy\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|solutionrelative:fakeipwithproxy\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|d:\\myproject\\fakeipwithproxy\\fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|D:\\MyProject\\FakeIpWithProxy\\fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{73D0F911-FF42-46AE-92DC-E03FC3D7F352}|FakeIpWithProxy\\FakeIpWithProxy.csproj|solutionrelative:fakeipwithproxy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "FakeIpWithProxy\\Config.cs",
               "ToolTip": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\Config.cs",
               "RelativeToolTip": "FakeIpWithProxy\\Config.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDMAAAB8AAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAQwDkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T13:18:38.866Z",
               "EditorCaption": ""
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "FakeIpWithProxy\\Form1.cs",
               "ToolTip": "D:\\MyProject\\FakeIpWithProxy\\FakeIpWithProxy\\Form1.cs",
               "RelativeToolTip": "FakeIpWithProxy\\Form1.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAqwBcAAAAbAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwBcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T13:07:54.512Z",
               "EditorCaption": ""
